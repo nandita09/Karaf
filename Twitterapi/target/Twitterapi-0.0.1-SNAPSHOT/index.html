@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Titans Twitter API</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<style>
+body {
+	background-color: CornflowerBlue;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+h1 {
+	margin: auto;
+	padding: 20px;
+	text-align: center;
+	font-family: "Playfair Display";
+	letter-spacing: 5px;
+}
+
+h2, h3, h4, h5, h6 {
+	font-family: "Playfair Display";
+	letter-spacing: 5px;
+}
+
+#rcorners2 {
+	border-radius: 25px;
+	background: white;
+	padding: 20px;
+	width: 200px;
+	height: 150px;
+}
+</style>
+
+</head>
+
+<body>
+	<h1>Team Titans Twitter Application</h1>
+	<header>
+		<h2>Titans</h2>
+	</header>
+
+	<section>
+		<nav>
+			<ul>
+
+
+				<li style="color: #6495ED;"><br> <a
+					href="getUserTimeline.jsp" target="displayFrame"> TimeLine </a></li>
+				<!-- <li style="color: #6495ED;"><a href="updateStatus.jsp"
+					target="displayFrame"> Post </a></li> -->
+				<li style="color: #6495ED;">
+					<form action="updateStatus.jsp" target="displayFrame" method="POST">
+						<input type="text" id="post" name="post" /> <input type="submit"
+							value="Post Tweet" />
+					</form>
+				</li>
+				<li style="color: #6495ED;">
+					<form action="SearchQuery.jsp" target="displayFrame" method="GET">
+						<input type="text" id="search" name="search" /> <input
+							type="submit" value="Search Tweet" />
+					</form>
+				</li>
+				<li style="color: #6495ED;">
+					<form action="CreateUserlist.jsp" target="displayFrame" method="GET">
+						<input type="text" id="CreateUserlist" name="CreateUserlist" /> <input
+							type="submit" value="CreateUserlist" />
+					</form>
+				
+				
+				
+				<li style="color: #6495ED;"><a href="GetUserlist.jsp"
+					target="displayFrame"> Get User List </a></li>
+				
+				<li style="color: #6495ED;">
+					<form action="DestroyUserlist.jsp" target="displayFrame" method="GET">
+						<input type="text" id="DestroyUserlist" name="DestroyUserlist" /> <input
+							type="submit" value="DestroyUserlist" />
+					</form>
+				
+				
+				<li style="color: #6495ED;"><a href="privacyPolicy.jsp"
+					target="displayFrame"> Privacy Policy </a></li>
+				
+				<li style="color: #6495ED;"><a href="getSuggestUserCategories.jsp" 
+					target="displayFrame"> User Categories </a></li>
+
+			</ul>
+		</nav>
+		<article>
+			<h2>Results</h2>
+			<iframe id="rcorners2" name="displayFrame" style="width: 600px"></iframe>
+		</article>
+
+
+
+	</section>
+
+	<footer>
+		<h2>Project Submitted By:</h2>
+		<h3>Nandita Singh, Yagna , Radhika , Madhuri</h3>
+	</footer>
+
+
+
+
+</body>
+</html>
+
